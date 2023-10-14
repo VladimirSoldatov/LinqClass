@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqClass_Example_2", "Linq
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqClass_Example_3", "LinqClass_Example_3\LinqClass_Example_3.csproj", "{AE5F1A44-C491-47B8-9D24-58FF3F7DAB06}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqClass_Exemple_4", "LinqClass_Exemple_4\LinqClass_Exemple_4.csproj", "{61FBE0A7-D7CF-44C0-8F8F-FC0BE4166ABA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqClass_Exemple_5", "LinqClass_Exemple_5\LinqClass_Exemple_5.csproj", "{FD3B0DE1-B1F0-4377-8D18-093CB6E70297}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{AE5F1A44-C491-47B8-9D24-58FF3F7DAB06}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE5F1A44-C491-47B8-9D24-58FF3F7DAB06}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE5F1A44-C491-47B8-9D24-58FF3F7DAB06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61FBE0A7-D7CF-44C0-8F8F-FC0BE4166ABA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61FBE0A7-D7CF-44C0-8F8F-FC0BE4166ABA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61FBE0A7-D7CF-44C0-8F8F-FC0BE4166ABA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61FBE0A7-D7CF-44C0-8F8F-FC0BE4166ABA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD3B0DE1-B1F0-4377-8D18-093CB6E70297}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD3B0DE1-B1F0-4377-8D18-093CB6E70297}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD3B0DE1-B1F0-4377-8D18-093CB6E70297}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD3B0DE1-B1F0-4377-8D18-093CB6E70297}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
