@@ -46,29 +46,23 @@ namespace LinqClass_Example_14
                 },
                 new Student {
                 Name = "Nicole",
-                GroupId =1, pol=1
+                GroupId =1, pol=2
                 }
             };
             Groups[] groups = new Groups[] { new Groups { Id = 1, GropeName = "12343" }, new Groups { Id = 2, GropeName = "128783" } };
             Pol[] pol = new Pol[] { new Pol { Id = 1, Name = "Мужской" }, new Pol { Id = 2, Name = "Женский" } };
-            var join1 = from st in students
-                        join gr in groups on st.GroupId equals gr.Id
-                        select new
-                        {
-                            Name = st.Name,
-                            GroupName = gr.GropeName,
-                            pol = st.pol
-                        };
+            var join1 = (from st in students
+                         join gr in groups on st.GroupId equals gr.Id
 
-            var join2 = from st in join1
-                        join pl in pol on st.pol equals pl.Id
-                        select new
-                        {
-                            Name = st.Name,
-                            GroupName = st.GroupName,
-                            Pol = pl.Name
-                        };
-            foreach(var item in join2)
+                         select new
+                         {
+                             Name = st.Name,
+                             GroupName = gr.GropeName,
+                             pol = st.pol
+                         }).ToList().Join(pol, c => c.pol, p => p.Id, (c, p) => new { Name = c.Name, GroupName = c.GroupName, Sex = p.Name });
+                     
+
+            foreach(var item in join1)
             {
                 Console.WriteLine(item);
             }
