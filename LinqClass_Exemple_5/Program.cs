@@ -11,6 +11,7 @@ namespace LinqClass
             int[] arrayInt = { 31, 22, 5, 17, 22, 8, 9, 55, 4, 44, 7 };
             IEnumerable<IGrouping<int, int>> query =
                                      from i in arrayInt
+                                     where i%2 ==0
                                      group i % 10 by i;
             foreach (IGrouping<int, int> item in query)
             {

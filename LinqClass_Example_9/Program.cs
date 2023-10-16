@@ -49,7 +49,7 @@ namespace SimpleProject
             WriteLine("\tStudents in groups:");
             foreach (var item in query)
             {
-                WriteLine(item);
+                WriteLine($"Фамилия: {item.LastName}\nИмя: {item.FirstName}\nГруппа: {item.GroupName}\n");
             }
 
 

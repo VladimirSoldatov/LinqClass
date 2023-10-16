@@ -43,8 +43,7 @@ namespace SimpleProject
 };
             WriteLine($"\tThe current date: { DateTime.Now.ToLongDateString()}\n");
             var query = from s in students
-            where (DateTime.Now - s.BirthDate).
-            Days / daysOfYear > 20
+            where (DateTime.Now - s.BirthDate).Days / daysOfYear > 20
             select s;
             WriteLine("\tStudents older than 20 years:");
             foreach (var item in query)
@@ -53,8 +52,7 @@ namespace SimpleProject
             }
             // код остался прежним
             WriteLine($"\tThe current date: { DateTime.Now.ToLongDateString()}\n");
-            var query1 = students.Where(s => (DateTime.Now - s.BirthDate).
-            Days / daysOfYear > 20).Select(s => s);
+            var query1 = students.Where(s => (DateTime.Now - s.BirthDate).Days / daysOfYear > 20).Select(s => s);
             WriteLine("\tStudents older than 20 years:");
             foreach (var item in query1)
             {

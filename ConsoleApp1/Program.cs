@@ -41,7 +41,7 @@ namespace ConsoleApp1
             IEnumerable<string> query = from p in poem
                                         let words = p.Split(new string[] { " ", ";", ",", "\r\n", "." }, StringSplitOptions.RemoveEmptyEntries)
                                         from w in words
-                                        where w.Count() > 5
+                                        where w.Count() == 5 && w.Contains("’")
                                         select w;
 
             Console.WriteLine("Word, in which more the 5 characters: ");

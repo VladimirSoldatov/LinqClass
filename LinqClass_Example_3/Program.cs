@@ -10,8 +10,8 @@ namespace LinqClass
         {
             int[] arrayInt = { 1, 2, 5, 7, 8, 9, 55, 4, 4, 7 };
             IEnumerable<int> query = from i in arrayInt
-                                     where i % 2 == 0
-                                     orderby i descending
+                                     where i > 0
+                                     orderby i ascending
                                      select i;
             foreach (int item in query)
             {

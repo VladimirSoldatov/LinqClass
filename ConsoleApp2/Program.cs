@@ -44,7 +44,7 @@ namespace SimpleProject
             WriteLine($"\tThe current date:{DateTime.Now.ToLongDateString()}\n");
             // код остался прежним
             WriteLine($"\tThe current date:        { DateTime.Now.ToLongDateString()}\n");
-        WriteLine($"\tThe youngest student:");
+            WriteLine($"\tThe youngest student:");
             var student = from s in students
                           where s.BirthDate ==
                           (from b in students
@@ -54,11 +54,12 @@ namespace SimpleProject
             {
                 WriteLine(item);
             }
+            WriteLine($"\tThe youngest student:");
             var minAge = (from s in students
                           select s).Min(s => (DateTime.Now -
                           s.BirthDate).Days / daysOfYear);
 
-WriteLine($"Age: {(int)minAge}");
+            WriteLine($"Age: {(int)minAge}");
         }
     }
 }

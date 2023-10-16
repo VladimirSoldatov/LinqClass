@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqClass_Example_12", "Lin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqClass_Example_13", "ConsoleApp2\LinqClass_Example_13.csproj", "{EE1A16E6-EFFA-4761-9370-1CD4090332DE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqClass_Example_14", "LinqClass_Example_14\LinqClass_Example_14.csproj", "{C4B475CC-6774-41E1-A8BF-CFADA3DD39EA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{EE1A16E6-EFFA-4761-9370-1CD4090332DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE1A16E6-EFFA-4761-9370-1CD4090332DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE1A16E6-EFFA-4761-9370-1CD4090332DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4B475CC-6774-41E1-A8BF-CFADA3DD39EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4B475CC-6774-41E1-A8BF-CFADA3DD39EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4B475CC-6774-41E1-A8BF-CFADA3DD39EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4B475CC-6774-41E1-A8BF-CFADA3DD39EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
