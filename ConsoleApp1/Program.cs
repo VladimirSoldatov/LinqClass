@@ -39,14 +39,15 @@ namespace ConsoleApp1
                     "Is second childishness and mere oblivion;\r\n" +
                     "Sans teeth, sans eyes, sans taste, sans everything."};
             IEnumerable<string> query = from p in poem
-                                        let words = p.Split(new string[] { " ", ";", ",", "\r\n", "." },StringSplitOptions.RemoveEmptyEntries)
+                                        let words = p.Split(new string[] { " ", ";", ",", "\r\n", "." }, StringSplitOptions.RemoveEmptyEntries)
                                         from w in words
                                         where w.Count() > 5
                                         select w;
+
             Console.WriteLine("Word, in which more the 5 characters: ");
-            foreach(string item in query)
+            foreach (string item in query)
             {
-                
+
                 Console.WriteLine($"{item}");
             }
 
